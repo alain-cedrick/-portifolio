@@ -21,97 +21,38 @@
                 <li><a href="contact.html">Contact</a></li>
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="login.html">Login/Sign Up</a></li>
+                <li><a href="admin.html">Admin Dashboard</a></li>
             </ul>
         </nav>
     </header>
-
-    <!-- Blog List Page -->
-    <section id="blog-list">
-        <h1>Blog</h1>
-        
-        <!-- Search and Filter Section -->
-        <div class="search-filter">
-            <input type="text" id="search-bar" placeholder="Search blog posts...">
-            <select id="category-filter">
-                <option value="">All Categories</option>
-                <option value="javascript">JavaScript</option>
-                <option value="web-development">Web Development</option>
-                <option value="react">React</option>
-            </select>
-        </div>
-
-        <!-- List of Blog Posts -->
-        <div class="blog-post">
-            <img src="photo1.jpeg" alt="Blog Image">
-            <div class="post-info">
-                <h2><a href="#single-blog">Understanding JavaScript Closures</a></h2>
-                <p class="description">A beginner's guide to understanding closures in JavaScript.</p>
-                <p class="date">Published on november , 4 ,2024</p>
-            </div>
-        </div>
-
-        <div class="blog-post">
-            <img src="photo1.jpeg" alt="Blog Image">
-            <div class="post-info">
-                <h2><a href="#single-blog">Responsive Web Design Principles</a></h2>
-                <p class="description">Tips and tricks to make your website responsive on all devices.</p>
-                <p class="date">Published on September 20, 2023</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Single Blog Page -->
-    <section id="single-blog">
-        <h1>Understanding JavaScript Closures</h1>
-        <p class="date">Published on december 2, 2020</p>
-        
-        <div class="blog-content">
-            <p>JavaScript closures are a fundamental concept that every developer should understand...</p>
-            <pre><code>
-                / factorial
-                function Factorial(n) {
-                let fact = 1;
-                for(let i = 1; i<=n; i++){
-                fact = fact * i;
-                }
-                return fact;
-                }
-                console.log(Factorial(6));
-                
-            </code></pre>
-            <p>...more content...</p>
-        </div>
-
-        <!-- Author Info -->
-        <div class="author-info">
-            <h3>About the Author</h3>
-            <p>net ninjer is a frontend developer specializing in JavaScript and web development. <a href="#about">Read more</a>.</p>
-        </div>
-
-        <!-- Comments Section (optional) -->
-        <div id="comments-section">
-            <h3>Comments</h3>
-            <form class="frb">
-                <label for="comment">Leave a Comment</label>
-                <textarea id="comment" name="comment" required></textarea>
-                <button class="btnn" type="submit">Submit</button>
-            </form>
-            <!-- Placeholder for displaying comments -->
-            <div class="comment">
-                <p><strong>net ninjer</strong> Great article! Really helped me understand closures better.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer Section -->
-    <footer>
+   
     
-        <div class="social-links">
-            <a href="https://linkedin.com">LinkedIn</a>
-            <a href="https://github.com">GitHub</a>
-            <a href="https://twitter.com">Twitter</a>
-        </div>
-    </footer>
-
-</body>
-</html>
+      <main>
+        <section id="blog-posts">
+          <article class="blog-post">
+            <img src="assets/blog1.jpg" alt="Blog Image 1">
+            <h2>Blog Post Title</h2>
+            <p class="blog-description">This is a short description of the blog post...</p>
+            <button class="like-btn">Like <span class="like-count">0</span></button>
+            <div class="comments">
+              <textarea placeholder="Leave a comment..." class="comment-input"></textarea>
+              <button class="submit-comment-btn">Submit</button>
+              <div class="comments-list">
+                <p>No comments yet.</p>
+              </div>
+            </div>
+          </article>
+    
+          <!-- Repeat blog posts dynamically using JavaScript -->
+        </section>
+      </main>
+    
+      <footer>
+        <p>Simple Blog Project &copy; 2024</p>
+      </footer>
+    
+      <script src="file.js"></script>
+    </body>
+    </html>
+    
+    

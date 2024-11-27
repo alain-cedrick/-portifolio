@@ -1,0 +1,11 @@
+{
+    "users": [
+      {
+        "email": "user@example.com",
+        "username": "user123",
+        "password": "userPassword",
+        "confirmPassword": "userPassword"
+      }
+    ]
+  }
+  

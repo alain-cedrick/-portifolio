@@ -616,6 +616,7 @@ pre {
     padding-top: 20px;
 }
 
+
 #comments-section {
     margin-top: 30px;
     border-top: 1px solid #ddd;
@@ -704,4 +705,472 @@ footer a:hover
     display: flex;
     justify-content: center;
     gap: 15px;
+}
+
+.container {
+  text-align: center;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+input {
+  padding: 10px;
+  font-size: 16px;
+  margin-top: 10px;
+  width: 80%;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 10px 20px;
+  margin-top: 10px;
+  font-size: 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+p {
+  font-size: 18px;
+  margin-top: 20px;
+}
+/* General styles for body */
+
+
+/* Table styling */
+table {
+  width: 80%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #4CAF50;
+  color: white;
+}
+
+td {
+  background-color: #f9f9f9;
+}
+
+/* Table row hover effect */
+tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Container for the table */
+#user-table-body {
+  margin-top: 20px;
+}
+
+/* Form styling (optional if needed for signup) */
+form {
+  width: 300px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"], input[type="password"], input[type="email"], input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+/* Alerts */
+.alert {
+  padding: 10px;
+  background-color: #f44336;
+  color: white;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.success {
+  background-color: #4CAF50;
+}
+
+
+/* Responsive Styles */
+@media screen and (max-width: 1200px) {
+  /* Adjust the container widths for smaller screens */
+  .intro, .skills, .bio, .se, .edu, .hoby, .cta {
+    width: 90%;
+    margin: 20px auto;
+  }
+
+  ul li {
+    font-size: 10px;
+  }
+
+  .logo {
+    font-size: 16px;
+  }
+
+  .cta {
+    width: 140px;
+    height: 35px;
+    font-size: 16px;
+  }
+
+  .fr, .frs, .frb {
+    width: 100%;
+    margin-left: 0;
+    padding: 15px;
+  }
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 768px) {
+  body {
+    height: auto;
+  }
+
+  nav {
+    text-align: left;
+    padding-left: 20px;
+  }
+
+  ul {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  ul li {
+    margin-left: 0;
+    margin-top: 15px;
+  }
+
+  .intro, .skills, .bio, .se, .edu, .hoby {
+    width: 100%;
+    margin: 20px 0;
+  }
+
+  .intro h2, .skills h3, .bio h3, .edu h3, .hoby h3 {
+    font-size: 24px;
+    padding-left: 10px;
+  }
+
+  .logo {
+    font-size: 18px;
+  }
+
+  .cta {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .cta a {
+    font-size: 14px;
+  }
+
+  .fr, .frs, .frb {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  form, .location iframe {
+    width: 100%;
+  }
+
+  .location h3 {
+    top: 250px;
+  }
+
+  .social-links {
+    display: block;
+    text-align: center;
+  }
+}
+
+/* Small Screen and Mobile-first (up to 480px) */
+@media screen and (max-width: 480px) {
+  .logo {
+    font-size: 14px;
+  }
+
+  .intro h2, .skills h3, .bio h3, .edu h3, .hoby h3 {
+    font-size: 20px;
+  }
+
+  .cta {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .cta a {
+    font-size: 12px;
+  }
+
+  .fr, .frs, .frb {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .location iframe {
+    width: 250px;
+    height: 300px;
+    top: 700px;
+  }
+
+  .frb {
+    width: 100%;
+  }
+
+  .container {
+    width: 90%;
+  }
+
+  input {
+    width: 100%;
+  }
+
+  button {
+    width: 100%;
+  }
+}
+
+/* Table Styling */
+table {
+  width: 100%;
+  margin: 20px 0;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #4CAF50;
+  color: white;
+}
+
+td {
+  background-color: #f9f9f9;
+}
+
+tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Blog Post Styling */
+.blog-post {
+  display: flex;
+  gap: 15px;
+  padding: 15px;
+  margin-bottom: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.blog-post img {
+  width: 100px;
+  height: 100px;
+  border-radius: 4px;
+  object-fit: cover;
+}
+
+/* Comments Section */
+#comments-section textarea {
+  width: 100%;
+  height: 150px;
+}
+
+/* Footer Styling */
+footer {
+  padding: 30px;
+}
+
+footer a:hover {
+  color: aqua;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+input[type="text"], input[type="password"], input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Reset some basic styles */
+
+
+/* Blog Section */
+#blog-posts {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.blog-post {
+  background-color: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  top:500px;
+}
+
+.blog-post img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.blog-post h2 {
+  margin-top: 10px;
+  font-size: 24px;
+}
+
+.blog-description {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.like-btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.like-btn:hover {
+  background-color: #45a049;
+}
+
+.comments {
+  margin-top: 20px;
+}
+
+.comment-input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.submit-comment-btn {
+  background-color: #f0a500;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.submit-comment-btn:hover {
+  background-color: #e89d00;
+}
+
+/* Admin Dashboard */
+#admin-dashboard {
+  padding: 30px;
+  max-width: 800px;
+  margin: auto;
+}
+
+#admin-dashboard form input,
+#admin-dashboard form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+#admin-dashboard form button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#admin-dashboard form button:hover {
+  background-color: #45a049;
+}
+
+#posts-list {
+  list-style-type: none;
+  margin-top: 30px;
+}
+
+#posts-list li {
+  background-color: #f9f9f9;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+#posts-list li button {
+  background-color: #f44336;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#posts-list li button:hover {
+  background-color: #d32f2f;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+  color: white;
+  top: 1500px;
 }

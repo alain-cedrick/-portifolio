@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet">
+</head> 
+<body>
+   <div  id="user-table-body"></div>
+   <table>
+    <th>
+        <td>email</td>
+        <td>Username</td>
+        <td>password</td>
+    </th>
+   </table>
+   <script>
+    // Handle Sign-Up
+    function handleSignUp(event) {
+        event.preventDefault();
+
+        const email = document.getElementById("email").value;
+        const username = document.getElementById("username").value;
+        const password = document.getElementById("password").value;
+        const confirmPassword = document.getElementById("confirm-password").value;
+
+        // Check if password and confirm password match
+        if (password !== confirmPassword) {
+            alert("Passwords do not match!");
+            return;
+        }
+
+        // Check if user already exists
+        const users = JSON.parse(localStorage.getItem("users")) || [];
+        const existingUser = users.find(user => user.email === email || user.username === username);
+        if (existingUser) {
+            alert("User with this email or username already exists.");
+            return;
+        }
+
+        // Store user data in local storage
+        users.push({ email, username, password });
+        localStorage.setItem("users", JSON.stringify(users));
+
+        alert("Sign up successful! You can now log in.");
+        window.location.href = "login.html"; // Redirect to login page
+    }
+
+    // Show Users in a Table (for admin or view purposes)
+    function showUsers() {
+        const users = JSON.parse(localStorage.getItem("users")) || [];
+        const userTable = document.getElementById("user-table-body");
+
+        users.forEach(user => {
+            const row = document.createElement("tr");
+            row.innerHTML = `
+                <td>${user.email}</td>
+                <td>${user.username}</td>
+                <td>${user.password}</td>
+            `;
+            userTable.appendChild(row);
+        });
+    }
+
+    // Automatically display users when page loads
+    window.onload = function() {
+        showUsers();
+    };
+</script>
+
+</body>
+
+
+</html>
